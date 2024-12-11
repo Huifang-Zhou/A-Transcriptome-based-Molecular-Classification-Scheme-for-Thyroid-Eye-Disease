@@ -1,1 +1,3 @@
 # A-Transcriptome-based-Molecular-Classification-Scheme-for-Thyroid-Eye-Disease
+
+    In this study, “DESeq2” R package was used to identify differentially expressed genes (DEGs). “clusterProfiler” R package was implemented for functional enrichment analyses. Then, “ConsensusClusterPlus” R package was applied for transcriptome-based samples subtyping with an intersected gene sets of top 5000 genes with the highest median absolute deviation and DEGs. “WGCNA” and machine learning algorithm were employed to excavate key gene signatures for two TED subclusters. Immune infiltration analysis and drug sensitivity analysis were conducted by ssGSEA and CMap database, respectively.
