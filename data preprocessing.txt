@@ -1,0 +1,3 @@
+$hisat2_path/hisat2 -p ${threads} --dta -x $hisat2_index/genome -1 ${outputDir}/cleandata/$sampleid/*1.fq.gz -2 ${outputDir}/cleandata/$sampleid/*2.fq.gz -S ${sampleid}.sam
+$gatk4/gatk --java-options '-Xmx40G -Djava.io.tmpdir=./' SortSam -I ${sampleid}.sam -O ${sampleid}.bam -SO coordinate
+$stringtie/stringtie ${sampleid}.bam -e -p ${threads} -G $GTF -o ${sampleid}.gtf ${sampleid}.bam
